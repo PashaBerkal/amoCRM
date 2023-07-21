@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap')
+* 
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    font-family: 'Inter', sans-serif
+
+html
+    height: 100%
+
+
+body
+    height: 100%
+    
+.background
+    background-image: url(../assets/desktop.png)
+    height: 100%
+    background-position: top
+    background-repeat: no-repeat
+    background-size: cover
+.container
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 45px 0 20px 0
+    width: 1140px
+    margin: 0 auto
+
+header
+    min-height: 75px
+    display: flex
+    justify-content: space-between
+    .left
+        display: flex
+        gap: 50px
+        width: 70%
+        .logo
+            width: 140px
+            .logoText
+                font-size: 10px
+                margin-top: 5px
+                color: rgb(255, 255, 255)
+                font-weight: 300
+
+        .menu
+            display: flex
+            width: 60%
+            list-style-type: none
+            justify-content: space-between
+            .menuItem
+                color: rgb(255, 255, 255)
+                font-size: 16px
+                font-weight: 500
+                cursor: pointer
+    .right
+        .contacts
+            display: flex
+            width: 300px
+            .phone 
+                color: rgb(255, 255, 255)
+                font-size: 15px
+                text-decoration: none
+                font-weight: 500
+            .icons
+                display: flex
+                margin-left: 10px 
+                .icon
+                    margin-left: 30px
+                    cursor: pointer
+.main
+    display: flex
+    justify-content: space-between
+    height: 350px
+    .left
+        display: flex
+        flex-direction: column
+        .title
+            background-image: linear-gradient(45deg, rgba(252,167,69,1),  rgba(255,63,120,1))
+            background-size: 90%
+            background-repeat: repeat
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            -moz-background-clip: text
+            -moz-text-fill-color: transparent
+            font-size: 48px
+            font-weight: 900
+        .subtitle
+            color: rgb(255, 255, 255)
+            font-size: 16px
+            font-weight: 100
+            margin-top: 30px
+            width: 80%
+    .right
+        width: 30%
+        display: flex
+        flex-direction: column
+        .advantages
+            display: grid
+            grid-template: 70px 70px / 140px 145px
+            gap: 30px
+            .advantage
+                .title
+                    font-size: 18px
+                    font-weight: 500
+                    color: rgb(255, 255, 255)
+                    text-transform: uppercase
+                    font-weight: 500
+                    text-align: end
+                .subtitle
+                    color: rgb(255, 255, 255)
+                    font-size: 16px
+                    margin-top: 5px
+                    font-weight: 100
+                    text-align: end
+        .consultation
+            display: block
+            font-size: 16
+            font-weight: 500
+            margin: 50px auto 0
+            height: 60px
+            width: 260px
+            background-color: #4077f3
+            border: none
+            cursor: pointer
+.mainMobile
+    display: none
+footer
+    .flexWrapper
+        display: flex
+        justify-content: space-between
+        .companyInfo
+            width: 15%
+            .title
+                color: rgba(101, 101, 102, 1)
+                font-size: 14px
+                margin-bottom: 10px
+                font-weight: 700
+            .companyInfoItem
+                color: rgb(255, 255, 255)
+                font-size: 16px
+                cursor: pointer
+                margin-top: 10px
+        .menu
+            width: 35%
+            .wrapperMenu 
+                display: flex
+                justify-content: space-between
+                width: 100%
+            .title
+                color: rgba(101, 101, 102, 1)
+                font-size: 14px
+                margin-bottom: 10px
+                font-weight: 700
+            .menuItem
+                color: rgb(255, 255, 255)
+                font-size: 16px
+                margin-top: 10px
+                cursor: pointer
+        .contacts
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            .title
+                color: rgba(101, 101, 102, 1)
+                font-size: 14px
+                margin-bottom: 10px
+                font-weight: 700
+            .phone 
+                    color: rgb(255, 255, 255)
+                    font-size: 16px
+                    cursor: pointer
+                    text-decoration: none
+                    margin-top: 10px
+            .icons
+                display: flex
+                justify-content: flex-end
+                margin-top: 10px
+                .icon
+                    margin-left: 5px
+                    cursor: pointer
+            .address
+                margin-top: 10px
+                color: rgb(255, 255, 255)
+                font-size: 16px
+    .policy
+        text-align: end
+        font-size: 12px
+        color: rgb(255, 255, 255)
+        span
+            text-decoration: underline
+            cursor: pointer
+
+@media (max-width: 1200px)
+    .background
+        header
+            .left
+                .menu
+                    .menuItem
+                        font-size: 15px
+        footer
+            .flexWrapper
+                .menu
+                    width: 40%
+        .container
+            width: 980px
+            .main
+                .right
+                    width: 37%
+@media (max-width: 992px)
+    .background
+        header
+            .right
+                .contacts
+                    width: 269px
+                    .phone
+                        font-size: 12px
+            .left
+                gap: 30px
+                .menu
+                    .menuItem
+                        font-size: 11px
+        .container
+            width: 768px
+            .main
+                .right
+                    width: 43%
+        footer
+            .flexWrapper
+                .menu
+                    width: 45%
+
+@media(max-width: 768px)
+    .background
+        background-image: none
+        .container
+            padding: 0
+            display: block
+            width: 100%
+            header
+                background: #000
+                padding: 15px 15px 0 15px
+                min-height: 55px
+                .left
+                    width: 100%
+                    .logo
+                        display: none
+                        .logoText
+                            display: none
+                    .menu
+                        width: 100%
+                        .menuItem
+                            font-size: 14px
+                            &:last-child
+                                display: none
+                .right
+                    display: none
+            .main
+                display: none
+            .mainMobile
+                padding: 40px 15px 0 15px
+                display: block
+                margin-top: 0
+                background: url(../assets/desktopMobile.png)
+                background-position: bottom
+                background-repeat: no-repeat
+                background-size: cover
+                height: 450px
+                .title
+                    font-size: 36px
+                    font-weight: 400
+                    color: rgb(255, 255, 255)
+                    span
+                        background-image: linear-gradient(45deg, rgba(252,167,69,1),  rgba(255,63,120,1))
+                        background-size: 90%
+                        background-repeat: repeat
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        -moz-background-clip: text
+                        -moz-text-fill-color: transparent
+                        font-weight: 900
+                .subtitle
+                    color: rgb(255, 255, 255)
+                    font-size: 18px
+                    margin-top: 15px
+                    width: 100%
+                    font-weight: 400
+                .gift
+                    margin-top: 45px
+                    .title
+                        font-size: 18px
+                        color: rgb(255, 255, 255)
+                        font-weight: 400
+                    .advantages
+                        .advantagesUp
+                            display: flex
+                            gap: 10px
+                        .advantagesDown
+                            display: flex
+                            gap: 10px
+                        .advantage
+                            margin-top: 20px
+                            display: flex
+                            align-items: center
+                            gap: 2px
+                            .dash
+                                background: linear-gradient(45deg, rgba(252,167,69,1),  rgba(255,63,120,1))
+                                display: block
+                                width: 10px
+                                height: 1px
+                            .title
+                                font-size: 13px
+                                font-weight: 400
+            footer
+                padding: 35px 15px 0 15px
+                background: #000
+                .flexWrapper
+                    display: block
+                    .companyInfo
+                        width: 100%
+                        .title
+                            color: rgba(101, 101, 102, 1)
+                            font-style: 12px
+                        .companyInfoItem
+                            font-size: 14px
+                    .menu
+                        width: 100%
+                        margin-top: 30px
+                        .menuItem
+                            font-size: 14px
+                    .contacts
+                        align-items: flex-start
+                        .title
+                            margin-top: 30px
+                            font-size: 12px
+                        .phone 
+                                color: rgb(255, 255, 255)
+                                font-size: 16px
+                                cursor: pointer
+                                text-decoration: none
+                                margin-top: 10px
+                        .icons
+                            display: flex
+                            justify-content: flex-start
+                            margin-top: 10px
+                            width: 100%
+                            .icon
+                                margin-left: 0
+                                margin-right: 15px
+                                cursor: pointer
+                        .address
+                            font-size: 14px
+                .policy
+                    text-align: start
+                    margin-top: 50px
+                    span
+                        margin-top: 5px
+                
+
+            
+            
+
+
+

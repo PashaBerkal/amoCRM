@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.background {
+  background-image: url(../assets/desktop.png);
+  height: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 45px 0 20px 0;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  width: 70%;
+}
+header .left .logo {
+  width: 140px;
+}
+header .left .logo .logoText {
+  font-size: 10px;
+  margin-top: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+header .left .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .left .menu .menuItem {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+header .right .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+}
+header .right .contacts .phone {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+header .right .contacts .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+header .right .contacts .icons .icon {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 350px;
+}
+.main .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main .left .title {
+  background-image: linear-gradient(45deg, rgb(252, 167, 69), rgb(255, 63, 120));
+  background-size: 90%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 900;
+}
+.main .left .subtitle {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 30px;
+  width: 80%;
+}
+.main .right {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main .right .advantages {
+  display: grid;
+  grid-template: 70px 70px/140px 145px;
+  gap: 30px;
+}
+.main .right .advantages .advantage .title {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: end;
+}
+.main .right .advantages .advantage .subtitle {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: 100;
+  text-align: end;
+}
+.main .right .consultation {
+  display: block;
+  font-size: 16;
+  font-weight: 500;
+  margin: 50px auto 0;
+  height: 60px;
+  width: 260px;
+  background-color: #4077f3;
+  border: none;
+  cursor: pointer;
+}
+
+.mainMobile {
+  display: none;
+}
+
+footer .flexWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .flexWrapper .companyInfo {
+  width: 15%;
+}
+footer .flexWrapper .companyInfo .title {
+  color: rgb(101, 101, 102);
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+footer .flexWrapper .companyInfo .companyInfoItem {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+footer .flexWrapper .menu {
+  width: 35%;
+}
+footer .flexWrapper .menu .wrapperMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+footer .flexWrapper .menu .title {
+  color: rgb(101, 101, 102);
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+footer .flexWrapper .menu .menuItem {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+footer .flexWrapper .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+footer .flexWrapper .contacts .title {
+  color: rgb(101, 101, 102);
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+footer .flexWrapper .contacts .phone {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+}
+footer .flexWrapper .contacts .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+}
+footer .flexWrapper .contacts .icons .icon {
+  margin-left: 5px;
+  cursor: pointer;
+}
+footer .flexWrapper .contacts .address {
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+footer .policy {
+  text-align: end;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+footer .policy span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .background header .left .menu .menuItem {
+    font-size: 15px;
+  }
+  .background footer .flexWrapper .menu {
+    width: 40%;
+  }
+  .background .container {
+    width: 980px;
+  }
+  .background .container .main .right {
+    width: 37%;
+  }
+}
+@media (max-width: 992px) {
+  .background header .right .contacts {
+    width: 269px;
+  }
+  .background header .right .contacts .phone {
+    font-size: 12px;
+  }
+  .background header .left {
+    gap: 30px;
+  }
+  .background header .left .menu .menuItem {
+    font-size: 11px;
+  }
+  .background .container {
+    width: 768px;
+  }
+  .background .container .main .right {
+    width: 43%;
+  }
+  .background footer .flexWrapper .menu {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .background {
+    background-image: none;
+  }
+  .background .container {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+  .background .container header {
+    background: #000;
+    padding: 15px 15px 0 15px;
+    min-height: 55px;
+  }
+  .background .container header .left {
+    width: 100%;
+  }
+  .background .container header .left .logo {
+    display: none;
+  }
+  .background .container header .left .logo .logoText {
+    display: none;
+  }
+  .background .container header .left .menu {
+    width: 100%;
+  }
+  .background .container header .left .menu .menuItem {
+    font-size: 14px;
+  }
+  .background .container header .left .menu .menuItem:last-child {
+    display: none;
+  }
+  .background .container header .right {
+    display: none;
+  }
+  .background .container .main {
+    display: none;
+  }
+  .background .container .mainMobile {
+    padding: 40px 15px 0 15px;
+    display: block;
+    margin-top: 0;
+    background: url(../assets/desktopMobile.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+  }
+  .background .container .mainMobile .title {
+    font-size: 36px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+  }
+  .background .container .mainMobile .title span {
+    background-image: linear-gradient(45deg, rgb(252, 167, 69), rgb(255, 63, 120));
+    background-size: 90%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-weight: 900;
+  }
+  .background .container .mainMobile .subtitle {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 15px;
+    width: 100%;
+    font-weight: 400;
+  }
+  .background .container .mainMobile .gift {
+    margin-top: 45px;
+  }
+  .background .container .mainMobile .gift .title {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+  }
+  .background .container .mainMobile .gift .advantages .advantagesUp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .background .container .mainMobile .gift .advantages .advantagesDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .background .container .mainMobile .gift .advantages .advantage {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2px;
+  }
+  .background .container .mainMobile .gift .advantages .advantage .dash {
+    background: linear-gradient(45deg, rgb(252, 167, 69), rgb(255, 63, 120));
+    display: block;
+    width: 10px;
+    height: 1px;
+  }
+  .background .container .mainMobile .gift .advantages .advantage .title {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .background .container footer {
+    padding: 35px 15px 0 15px;
+    background: #000;
+  }
+  .background .container footer .flexWrapper {
+    display: block;
+  }
+  .background .container footer .flexWrapper .companyInfo {
+    width: 100%;
+  }
+  .background .container footer .flexWrapper .companyInfo .title {
+    color: rgb(101, 101, 102);
+    font-style: 12px;
+  }
+  .background .container footer .flexWrapper .companyInfo .companyInfoItem {
+    font-size: 14px;
+  }
+  .background .container footer .flexWrapper .menu {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .background .container footer .flexWrapper .menu .menuItem {
+    font-size: 14px;
+  }
+  .background .container footer .flexWrapper .contacts {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .background .container footer .flexWrapper .contacts .title {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+  .background .container footer .flexWrapper .contacts .phone {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  .background .container footer .flexWrapper .contacts .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .background .container footer .flexWrapper .contacts .icons .icon {
+    margin-left: 0;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .background .container footer .flexWrapper .contacts .address {
+    font-size: 14px;
+  }
+  .background .container footer .policy {
+    text-align: start;
+    margin-top: 50px;
+  }
+  .background .container footer .policy span {
+    margin-top: 5px;
+  }
+}/*# sourceMappingURL=style.css.map */
